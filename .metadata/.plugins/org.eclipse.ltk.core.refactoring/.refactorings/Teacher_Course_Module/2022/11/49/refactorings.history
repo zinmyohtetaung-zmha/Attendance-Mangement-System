@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;teacherregister.png&apos; to &apos;Teacher_Module/src/com.hostmdy.attendance.teacher.image&apos;&#x0D;&#x0A;- Original project: &apos;Teacher_Course_Module&apos;&#x0D;&#x0A;- Destination element: &apos;Teacher_Module/src/com.hostmdy.attendance.teacher.image&apos;&#x0D;&#x0A;- Original element: &apos;teacherregister.png&apos;" description="Copy file" destination="=Teacher_Module/src&lt;com.hostmdy.attendance.teacher.image" element1="src/com/hostmdy/attendance/teacher_course/image/teacherregister.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1669798769365" units="0" version="1.0"/>
+</session>

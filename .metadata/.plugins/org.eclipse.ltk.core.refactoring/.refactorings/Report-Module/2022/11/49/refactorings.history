@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Report-Module/src/com/hostmdy/attendance/report/view/ScheduleUI.fxml&apos; to &apos;ReportUI.fxml&apos;" description="Rename resource &apos;ScheduleUI.fxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/hostmdy/attendance/report/view/ScheduleUI.fxml" name="ReportUI.fxml" stamp="1669716464141" updateReferences="true"/>
+</session>

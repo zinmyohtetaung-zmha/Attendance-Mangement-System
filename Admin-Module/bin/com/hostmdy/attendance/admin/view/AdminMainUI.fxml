@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #d1d1ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hostmdy.attendance.admin.controller.AdminController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="26.0" layoutY="124.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/teacher.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnTeachers" layoutX="8.0" layoutY="147.0" mnemonicParsing="false" onAction="#processTeachers" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Teachers">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="17.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblTrcount" alignment="CENTER" layoutX="7.0" layoutY="141.0" prefHeight="58.0" prefWidth="51.0" text="0" textFill="#3c13f2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="7.0" layoutY="6.0" onMouseClicked="#processTrRefresh" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/refresh%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="248.0" layoutY="123.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/graduating-student.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnStudents" layoutX="9.0" layoutY="147.0" mnemonicParsing="false" onAction="#processStudents" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Students">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="17.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblStcount" alignment="CENTER" layoutX="6.0" layoutY="141.0" prefHeight="58.0" prefWidth="49.0" text="0" textFill="#3c13f2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="5.0" layoutY="4.0" onMouseClicked="#processStdRefresh" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/refresh%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="689.0" layoutY="117.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="139.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/ebook.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnCourse" layoutX="9.0" layoutY="147.0" mnemonicParsing="false" onAction="#processCourse" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Course">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="469.0" layoutY="119.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="129.0" fitWidth="138.0" layoutX="25.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/enrollment.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnEnrollemnt" layoutX="9.0" layoutY="148.0" mnemonicParsing="false" onAction="#processEnrollment" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Enrollment">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="26.0" layoutY="367.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="125.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/timetable.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnSchedule" layoutX="8.0" layoutY="147.0" mnemonicParsing="false" onAction="#processSchedule" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Schedule">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="470.0" layoutY="364.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/attendance.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnAttendance" layoutX="9.0" layoutY="148.0" mnemonicParsing="false" onAction="#processAttendance" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Attendance">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="691.0" layoutY="364.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="131.0" fitWidth="141.0" layoutX="24.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/report%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnReport" layoutX="9.0" layoutY="148.0" mnemonicParsing="false" onAction="#processReport" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Report">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="248.0" layoutY="365.0" prefHeight="200.0" prefWidth="180.0" styleClass="pane">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="125.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/teacher%20&amp;%20course.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnRelationship" layoutX="9.0" layoutY="148.0" mnemonicParsing="false" onAction="#processRelationship" prefHeight="44.0" prefWidth="163.0" styleClass="btn" text="Courses' Teacher">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="103.0" fitWidth="394.0" layoutX="25.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo&amp;textpng.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

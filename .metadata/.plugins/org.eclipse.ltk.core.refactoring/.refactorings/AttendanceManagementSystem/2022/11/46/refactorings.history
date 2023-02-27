@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AttendanceManagementSystem/src/com/hostmdy/attendance/common/style/application.css&apos; to &apos;style.css&apos;" description="Rename resource &apos;application.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/hostmdy/attendance/common/style/application.css" name="style.css" stamp="1668097930716" updateReferences="true"/>
+</session>

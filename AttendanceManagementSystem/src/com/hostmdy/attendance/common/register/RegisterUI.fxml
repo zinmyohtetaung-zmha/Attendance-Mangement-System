@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #d1d1ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hostmdy.attendance.common.register.RegisterController">
+   <children>
+      <GridPane layoutX="444.0" layoutY="83.0" prefHeight="435.0" prefWidth="419.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="147.66668701171875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="271.33331298828125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="First Name     :" textFill="#7676da">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Middle Name :" textFill="#7676da" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Last Name     :" textFill="#7676da" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Email             :" textFill="#7676da" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Code              :" textFill="#7676da" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Password       :" textFill="#7676da" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="NRC               :" textFill="#7676da" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Phone            :" textFill="#7676da" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Address         :" textFill="#7676da" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Role               :" textFill="#7676da" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Lucida Fax Regular" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfFname" prefHeight="30.0" prefWidth="300.0" promptText="Enter your firstname" styleClass="input-label" GridPane.columnIndex="1" />
+            <TextField fx:id="tfMname" prefHeight="30.0" prefWidth="300.0" promptText="Enter your middlenmae" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfLname" prefHeight="30.0" prefWidth="300.0" promptText="Enter your last name" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfEmail" prefHeight="30.0" prefWidth="300.0" promptText="Enter your email" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfCode" prefHeight="30.0" prefWidth="300.0" promptText="Enter your code" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfNrc" prefHeight="30.0" prefWidth="300.0" promptText="Enter your NRC number" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tfPhone" prefHeight="30.0" prefWidth="300.0" promptText="Enter your phone" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tfAddress" prefHeight="30.0" prefWidth="300.0" promptText="Enter your address" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ComboBox fx:id="cobRole" prefHeight="30.0" prefWidth="308.0" promptText="Choose Role" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <PasswordField fx:id="pfPassword" prefHeight="30.0" promptText="Enter your password" styleClass="input-label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="904.0" style="-fx-background-color: #7676da;" text="Register Your Information" textFill="WHITE">
+         <font>
+            <Font name="Lucida Fax Demibold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegister" layoutX="740.0" layoutY="524.0" mnemonicParsing="false" onAction="#processRegister" prefHeight="45.0" prefWidth="120.0" styleClass="btnSignin" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="2.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Login-rafiki.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="367.0" layoutY="549.0" prefHeight="34.0" prefWidth="110.0" text="Aready Register" textFill="#6868e8">
+         <font>
+            <Font name="Lucida Fax Demibold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSignup" layoutX="473.0" layoutY="549.0" onMouseClicked="#processSigninPage" prefHeight="35.0" prefWidth="82.0" styleClass="signin" text="Sign in" textFill="#6868e8" underline="true">
+         <font>
+            <Font name="Lucida Fax Demibold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblworngalern" alignment="CENTER" layoutX="455.0" layoutY="54.0" prefHeight="30.0" prefWidth="443.0" textFill="#ee4848">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

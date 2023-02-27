@@ -1,0 +1,34 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.input-label{
+	-fx-border-color:  #7676da;
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 5px;
+	-fx-border-radius: 5px;
+}
+#lblSignin:hover{
+	-fx-text-fill: green;
+}
+
+.input{
+	-fx-border-color: #6868e8;
+	-fx-background-color: #fff;
+	-fx-background-radius: 5px;
+	-fx-border-radius: 5px;
+}
+.btnSignin{
+	-fx-background-color:  #b1b1e6;
+	-fx-border-color: blue;
+	-fx-text-fill:blue; 
+	
+}
+.btnSignin:hover{
+	-fx-background-color:  #6868e8;
+	-fx-text-fill:#ffffff; 
+}
+.signup:hover{
+	-fx-text-fill:red;
+}
+.signin:hover{
+	-fx-text-fill:green;
+}

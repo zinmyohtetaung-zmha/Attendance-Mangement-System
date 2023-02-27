@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #d1d1ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hostmdy.attendance.controller.AddAttendanceController">
+   <center>
+      <SplitPane dividerPositions="0.22909698996655517" orientation="VERTICAL" prefHeight="600.0" prefWidth="808.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="78.0" prefWidth="898.0" style="-fx-background-color: #d1d1ff;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="900.0" style="-fx-background-color: #6868e8;" text="Add Attendance" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Fax Demibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBack" alignment="CENTER" layoutX="1.0" layoutY="30.0" onMouseClicked="#processBack" prefHeight="17.0" prefWidth="43.0" styleClass="back" text="Back" textFill="#d1d1ff" underline="true">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblShowTime" layoutX="699.0" layoutY="3.0" prefHeight="42.0" prefWidth="149.0" textFill="#00fff6">
+                     <font>
+                        <Font name="Lucida Fax Demibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbCourse" layoutX="9.0" layoutY="88.0" prefHeight="40.0" prefWidth="139.0" promptText="Choose Course" style="-fx-background-color: #fff;" styleClass="button" />
+                  <Label fx:id="lblSemester" alignment="CENTER" layoutX="475.0" layoutY="87.0" prefHeight="40.0" prefWidth="197.0" style="-fx-background-color: #fff;" styleClass="lavel" textFill="#3213ff">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTimeSlot" alignment="CENTER" layoutX="678.0" layoutY="87.0" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: #fff;" styleClass="lavel" textFill="#3213ff">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="531.0" layoutY="52.0" prefHeight="40.0" prefWidth="90.0" text="Semester " textFill="#3213ff">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTimeSlot1" layoutX="735.0" layoutY="54.0" prefHeight="40.0" prefWidth="94.0" text="Time Slot" textFill="#3213ff">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDate" layoutX="62.0" layoutY="2.0" prefHeight="42.0" prefWidth="149.0" textFill="#00fff6">
+                     <font>
+                        <Font name="Lucida Fax Demibold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="254.0" layoutY="53.0" prefHeight="40.0" prefWidth="145.0" text="Course Name" textFill="#3213ff">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCourseName" alignment="CENTER" layoutX="153.0" layoutY="88.0" prefHeight="40.0" prefWidth="316.0" style="-fx-background-color: #fff;" styleClass="lavel" textFill="#3d16ff">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="51.0" prefHeight="40.0" prefWidth="145.0" text="Course Code" textFill="#3213ff">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="900.0" style="-fx-background-color: #d1d1ff;">
+               <children>
+                  <HBox layoutX="9.0" layoutY="1.0" prefHeight="382.0" prefWidth="878.0">
+                     <children>
+                        <TableView fx:id="enrollmentTableView" prefHeight="382.0" prefWidth="875.0">
+                          <columns>
+                            <TableColumn fx:id="number" prefWidth="49.33333206176758" text="No" />
+                              <TableColumn fx:id="studentId" prefWidth="129.66665649414062" text="Student Id" />
+                            <TableColumn fx:id="studentName" prefWidth="253.33334350585938" text="Student Name" />
+                              <TableColumn fx:id="year" prefWidth="161.0" text="Year" />
+                            <TableColumn fx:id="presentCol" prefWidth="143.0" text="Present" />
+                            <TableColumn fx:id="absentCol" prefWidth="137.0" text="Absent" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lblWarning" alignment="CENTER" layoutX="71.0" layoutY="109.0" prefHeight="30.0" prefWidth="766.0" text="Label" textFill="RED" visible="false">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="660.0" layoutY="403.0" mnemonicParsing="false" onAction="#processAdd" prefHeight="40.0" prefWidth="200.0" text="ADD Attendance">
+                     <font>
+                        <Font name="Lucida Fax Demibold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

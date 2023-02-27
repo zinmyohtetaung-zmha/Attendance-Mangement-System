@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #d1d1ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hostmdy.attendance.common.main_login.SigninController">
+   <children>
+      <AnchorPane fx:id="imageHolder" prefHeight="600.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="506.0" fitWidth="450.0" layoutX="32.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Confirmed%20attendance-rafiki.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tfEmail" layoutX="538.0" layoutY="230.0" prefHeight="35.0" prefWidth="250.0" styleClass="input" />
+      <PasswordField fx:id="pfPassword" layoutX="538.0" layoutY="308.0" prefHeight="35.0" prefWidth="250.0" styleClass="input" />
+      <ComboBox fx:id="cobRole" layoutX="538.0" layoutY="381.0" prefHeight="35.0" prefWidth="250.0" promptText="Choose Role" styleClass="input" />
+      <Label layoutX="330.0" layoutY="523.0" prefHeight="35.0" prefWidth="164.0" text="Don't have an account? Please" textFill="#6868e8">
+         <font>
+            <Font name="Lucida Fax Demibold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblSignup" layoutX="494.0" layoutY="523.0" onMouseClicked="#processSignupPage" prefHeight="35.0" prefWidth="82.0" styleClass="signup" text="Sign up" textFill="#6868e8" underline="true">
+         <font>
+            <Font name="Lucida Fax Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="538.0" layoutY="209.0" prefHeight="17.0" prefWidth="250.0" text="Email" textFill="#6868e8">
+         <font>
+            <Font name="Lucida Fax Demibold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="538.0" layoutY="289.0" prefHeight="17.0" prefWidth="250.0" text="Password" textFill="#6868e8">
+         <font>
+            <Font name="Lucida Fax Demibold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="538.0" layoutY="365.0" prefHeight="17.0" prefWidth="250.0" text="Role" textFill="#6868e8">
+         <font>
+            <Font name="Lucida Fax Demibold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSignin" layoutX="668.0" layoutY="454.0" mnemonicParsing="false" onAction="#processSignin" prefHeight="45.0" prefWidth="120.0" styleClass="btnSignin" text="Sign in" textFill="WHITE">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="538.0" layoutY="155.0" prefHeight="30.0" prefWidth="250.0" text="Please Sign in" textFill="#6868e8">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="16.0" prefHeight="45.0" prefWidth="904.0" styleClass="title" text="Attendance Management System" textFill="#6868e8">
+         <font>
+            <Font name="Lucida Fax Demibold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblworngalern" alignment="CENTER" layoutX="445.0" layoutY="114.0" prefHeight="30.0" prefWidth="443.0" textFill="#ee4848">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button{
+	-fx-background-color:  #b1b1e6;
+	-fx-border-color: blue;
+	-fx-text-fill:blue; 
+}
+.button:hover{
+	-fx-background-color:  #6868e8;
+	-fx-text-fill:#ffffff; 
+}
+.id{
+	-fx-text-alignment: center ;	
+}
+.search{
+		-fx-border-color: blue;
+}
